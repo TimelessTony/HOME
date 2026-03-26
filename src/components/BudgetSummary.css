@@ -1,0 +1,122 @@
+.summary-card {
+  background: var(--card-bg);
+}
+
+.project-label {
+  font-size: 0.9375rem;
+  color: var(--text-light);
+  margin-bottom: 16px;
+}
+
+.estimate-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.estimate-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 16px;
+  border-radius: var(--radius);
+  text-align: center;
+}
+
+.estimate-low {
+  background: var(--success-bg);
+}
+
+.estimate-expected {
+  background: var(--primary-bg);
+}
+
+.estimate-high {
+  background: var(--warning-bg);
+}
+
+.estimate-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-light);
+}
+
+.estimate-badge {
+  display: inline-block;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 999px;
+  align-self: center;
+}
+
+.badge-low {
+  background: var(--success);
+  color: white;
+}
+
+.badge-expected {
+  background: var(--primary);
+  color: white;
+}
+
+.badge-high {
+  background: var(--warning);
+  color: white;
+}
+
+.estimate-value {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-heading);
+}
+
+.range-bar-container {
+  margin-top: 4px;
+}
+
+.range-bar-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: var(--text-light);
+  margin-bottom: 6px;
+}
+
+.range-bar {
+  position: relative;
+  height: 8px;
+  background: var(--border);
+  border-radius: 999px;
+  overflow: visible;
+}
+
+.range-bar-fill {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  background: linear-gradient(90deg, var(--success), var(--primary));
+  border-radius: 999px;
+}
+
+.range-bar-marker {
+  position: absolute;
+  top: -4px;
+  width: 16px;
+  height: 16px;
+  background: var(--primary);
+  border: 2px solid var(--card-bg);
+  border-radius: 50%;
+  transform: translateX(-50%);
+  box-shadow: var(--shadow);
+}
+
+.range-bar-caption {
+  text-align: center;
+  font-size: 0.8125rem;
+  color: var(--text-light);
+  margin-top: 10px;
+}
