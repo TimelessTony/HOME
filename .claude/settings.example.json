@@ -1,0 +1,36 @@
+{
+  "_comment": "Copy this file to .claude/settings.local.json and fill in creds. settings.local.json is gitignored.",
+  "mcpServers": {
+    "sage": {
+      "command": "node",
+      "args": ["./mcp-servers/sage/src/index.js"],
+      "env": {
+        "INTACCT_SENDER_ID": "",
+        "INTACCT_SENDER_PASSWORD": "",
+        "INTACCT_COMPANY_ID": "",
+        "INTACCT_USER_ID": "",
+        "INTACCT_USER_PASSWORD": "",
+        "INTACCT_ENTITY_ID": "",
+        "SAGECM_BASE_URL": "",
+        "SAGECM_CLIENT_ID": "",
+        "SAGECM_CLIENT_SECRET": "",
+        "SAGECM_TOKEN_URL": "",
+        "SAGECM_API_KEY": ""
+      }
+    }
+  },
+  "permissions": {
+    "allow": [
+      "mcp__sage__intacct_query",
+      "mcp__sage__intacct_read",
+      "mcp__sage__intacct_read_more",
+      "mcp__sage__intacct_inspect_object",
+      "mcp__sage__sagecm_list_projects",
+      "mcp__sage__sagecm_get_project",
+      "mcp__sage__sagecm_list_rfis",
+      "mcp__sage__sagecm_get_rfi",
+      "mcp__sage__sagecm_list_daily_logs",
+      "mcp__sage__sagecm_list_commitments"
+    ]
+  }
+}
