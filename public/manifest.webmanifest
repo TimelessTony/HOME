@@ -1,0 +1,37 @@
+{
+  "name": "ROM Suite",
+  "short_name": "ROM",
+  "description": "ROM Budget Calculator and Habit Tracker",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f9fafb",
+  "theme_color": "#4f46e5",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Habits",
+      "url": "./#/habits",
+      "description": "Track today's habits"
+    },
+    {
+      "name": "Budget Calculator",
+      "url": "./#/rom",
+      "description": "ROM budget estimator"
+    }
+  ]
+}
